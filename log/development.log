@@ -761,3 +761,157 @@ Processing by PostsController#edit as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/edit.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 347ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2017-10-16 11:00:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (19.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 871ms (Views: 806.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2017-10-16 11:00:51 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrjrSKrobGDK0SM4ugE2MmaHB5Ap4uB8W5zrMTj6f7IbsoHR6DhyiGMCSakOvfCC7b3tMyTZBhBfrbyb6BH0rA==", "title"=>"heyyy", "description"=>"hi hi hi", "commit"=>"Submit Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (16.6ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "heyyy"], ["description", "hi hi hi"], ["created_at", "2017-10-16 15:00:51.778587"], ["updated_at", "2017-10-16 15:00:51.778587"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 99ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/posts/5" for ::1 at 2017-10-16 11:00:51 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 100ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-10-16 11:01:14 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrjrSKrobGDK0SM4ugE2MmaHB5Ap4uB8W5zrMTj6f7IbsoHR6DhyiGMCSakOvfCC7b3tMyTZBhBfrbyb6BH0rA==", "title"=>"heyyy", "description"=>"hi hi hi", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "heyyy"], ["description", "hi hi hi"], ["created_at", "2017-10-16 15:01:14.957299"], ["updated_at", "2017-10-16 15:01:14.957299"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 15ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/posts/6" for ::1 at 2017-10-16 11:01:14 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/posts" for ::1 at 2017-10-16 11:01:15 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrjrSKrobGDK0SM4ugE2MmaHB5Ap4uB8W5zrMTj6f7IbsoHR6DhyiGMCSakOvfCC7b3tMyTZBhBfrbyb6BH0rA==", "title"=>"heyyy", "description"=>"hi hi hi", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "heyyy"], ["description", "hi hi hi"], ["created_at", "2017-10-16 15:01:15.048937"], ["updated_at", "2017-10-16 15:01:15.048937"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/posts/7" for ::1 at 2017-10-16 11:01:15 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 7]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/posts" for ::1 at 2017-10-16 11:04:04 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrjrSKrobGDK0SM4ugE2MmaHB5Ap4uB8W5zrMTj6f7IbsoHR6DhyiGMCSakOvfCC7b3tMyTZBhBfrbyb6BH0rA==", "title"=>"heyyy", "description"=>"hi hi hi", "commit"=>"Submit Post"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "heyyy"], ["description", "hi hi hi"], ["created_at", "2017-10-16 15:04:05.129081"], ["updated_at", "2017-10-16 15:04:05.129081"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 30ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/8" for ::1 at 2017-10-16 11:04:05 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 127ms (Views: 123.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/posts" for ::1 at 2017-10-16 11:04:43 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vrjrSKrobGDK0SM4ugE2MmaHB5Ap4uB8W5zrMTj6f7IbsoHR6DhyiGMCSakOvfCC7b3tMyTZBhBfrbyb6BH0rA==", "title"=>"heyyy", "description"=>"hi hi hi", "commit"=>"Submit Post"}
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.6ms)
+
+NameError (undefined local variable or method `params' for #<Class:0x00007ff6a0f86a80>):
+  app/models/post.rb:2:in `<class:Post>'
+  app/models/post.rb:1:in `<top (required)>'
+  app/controllers/posts_controller.rb:15:in `create'
+
+
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.7ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.8ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Laura/.rvm/gems/ruby-2.3.5/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (578.5ms)
+
+
+Started GET "/posts" for ::1 at 2017-10-16 11:15:08 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 327ms (Views: 292.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2017-10-16 11:15:17 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 158ms (Views: 155.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2017-10-16 11:15:26 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (165.8ms)
+Completed 200 OK in 288ms (Views: 216.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/posts/2" for ::1 at 2017-10-16 11:19:38 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dZJ/aE03htfDin1wI88YQwQwFBJ8zQbZiilaH/TDsqrQmBXxD+eYP2pZF+GXc97zjwr+sXH24LWOGA21JCg5tA==", "post"=>{"title"=>"Rails Introduction", "description"=>"asdfasdf"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (3.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2017-10-16 15:19:38.109492"], ["id", 2]]
+  [1m[35m (233.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 280ms (ActiveRecord: 238.4ms)
+
+
+Started GET "/posts/2" for ::1 at 2017-10-16 11:19:38 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 538ms (Views: 533.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for ::1 at 2017-10-16 11:21:35 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.7ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 131ms (Views: 118.7ms | ActiveRecord: 1.3ms)
